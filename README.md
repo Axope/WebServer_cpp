@@ -12,7 +12,7 @@
 
 ### 启动
 
-1. clone该项目；
+1. `git clone git@github.com:Axope/WebServer_cpp.git`；
 2. 在`main.cpp`中修改对应配置信息；
 3. 执行`build.sh`脚本；
 4. `./server`启动服务。
@@ -20,6 +20,7 @@
 ### 压力测试
 
 腾讯云轻量应用服务器，4核8GB，使用Webbench进行压力测试，结果如下：
+
 ![](./resources/test/webbench.jpg)
 
 从测试平均结果上来看，1w并发量条件下QPS约1700+
