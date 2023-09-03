@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axope - 主页</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .background {
+            background-image: url('images/index.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* 100%视窗高度 */
+            overflow: hidden;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.7); /* 内容区域的背景颜色 */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* 控制内容区域的最大宽度 */
+            margin: 0 auto; /* 水平居中 */
+            position: relative; /* 用于使内容区域在背景上居中 */
+            top: 50%; /* 垂直居中 */
+        }
+
+        header, nav, main, footer {
+            position: relative;
+            z-index: 1; /* 确保内容在背景上方 */
+        }
+
+        /* ...其他页面样式... */
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Axope</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="login.html">登录</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="content">
+            <h2>Hello!</h2>
+            <p>本界面由Chat-GPT生成</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 Axope
+    </footer>
+</body>
+</html>

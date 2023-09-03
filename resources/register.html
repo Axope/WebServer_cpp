@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axope - 注册</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .background {
+            background-image: url('images/register.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* 100%视窗高度 */
+            overflow: hidden;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.7); /* 内容区域的背景颜色 */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 370px; /* 控制内容区域的最大宽度 */
+            margin: 0 auto; /* 水平居中 */
+            position: relative; /* 用于使内容区域在背景上居中 */
+            top: 50%; /* 垂直居中 */
+        }
+
+        header, nav, main, footer {
+            position: relative;
+            z-index: 1; /* 确保内容在背景上方 */
+        }
+
+        /* 在这里使用 text-align 属性来设置密码字段的对齐方式 */
+        form label {
+            text-align: right; /* 文本右对齐 */
+            display: inline-block; /* 使标签显示为块元素，以便对齐生效 */
+            width: 100px; /* 设置标签的宽度，根据需要调整 */
+            margin-right: 10px; /* 可以根据需要调整右边距 */
+        }
+
+        /* ...其他页面样式... */
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Axope</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="login.html">登录</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home">
+            <div class="container">
+                    <div class="row">
+                        <div align="center">
+                            <h1 class="wow fadeInUp" data-wow-delay="0.6s">注册</h1>
+                            <form action="register" method="post">
+                                <div align="center"><input type="text" name="username" placeholder="用户名"
+                                            required="required"></div><br />
+                                <div align="center"><input type="password" name="password" placeholder="用户密码"
+                                            required="required"></div><br />
+                                <div align="center"><button type="submit">确认</button></div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Axope
+    </footer>
+</body>
+</html>
