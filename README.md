@@ -14,7 +14,7 @@
 
 1. `git clone git@github.com:Axope/WebServer_cpp.git`；
 2. 在`main.cpp`中修改对应配置信息；
-3. 执行`build.sh`脚本；
+3. 执行build脚本 `sh build.sh`；
 4. `./server`启动服务。
 
 ### 压力测试
